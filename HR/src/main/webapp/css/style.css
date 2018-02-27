@@ -1,0 +1,22 @@
+* {
+	text-align: center;
+}
+
+img {
+	width: 40px;
+	height: 40px;
+}
+
+span {
+	font-weight: bolder;
+	font-size: 20px;
+	color: red;
+}
+
+table, th {
+	border: 2px solid #000000;
+	width: 1000px;
+	height: 35px;
+	border-collapse: collapse;
+	margin: 0 auto;
+}

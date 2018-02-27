@@ -1,0 +1,3 @@
+该项目是一个maven项目，使用servlet和mybatis部署在Tomcat上实现员工的增删改查。
+前端显示使用jsp结合css，JavaScript样式。
+总的来说是一个练手的尝试，之后会学习使用Spring+MVC和jQuery等技术推出新版本，敬请期待！

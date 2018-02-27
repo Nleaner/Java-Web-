@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hr.mapper.EmpMapper">
+
+	<insert id="insert" parameterType="com.hr.entity.Emp">
+		insert into hr_tblemp values(hr_tblemp_empid.nextval,#{ename},#{egendar},#{depid},#{empdate})
+	</insert>
+	
+	<delete id="delete" parameterType="int">
+		delete hr_tblemp where empid=#{empid}
+	</delete>
+	
+	<update id="update" parameterType="emp">
+		update hr_tblemp set ename=#{ename},egendar=#{egendar},depid=#{depid},empdate=#{empdate} where empid=#{empid}
+	</update>
+	
+	<select id="select" parameterType="int" resultType="emp">
+		select * from hr_tblemp where empid=#{empid}
+	</select>
+	
+	<select id="selectall" resultType="emp">
+		select * from hr_tblemp
+	</select>
+	
+</mapper>
